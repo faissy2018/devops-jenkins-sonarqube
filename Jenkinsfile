@@ -10,7 +10,7 @@ node {
     }
 
     stage('build') {
-        sh "${GRADLE_HOME}/bin/gradle build"
+        sh "/opt/gradle/gradle-4.7/bin build"
     }
 
     stage('sonar-scanner') {
