@@ -1,6 +1,6 @@
 //START-OF-SCRIPT
 node {
-    def SONARQUBE_HOSTNAME = '3.16.76.211'
+    def SONARQUBE_HOSTNAME = 'sonarqube'
 
     def GRADLE_HOME = tool name: 'gradle-4.10.2', type: 'hudson.plugins.gradle.GradleInstallation'
     sh "${GRADLE_HOME}/bin/gradle tasks"
